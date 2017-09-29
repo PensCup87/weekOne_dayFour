@@ -92,7 +92,7 @@ namespace weekOne_dayFour
             Console.WriteLine("Your name is " + " " + fullName);
 
 
-            Console.WriteLine("Hey, can you guess the animal I saw? \n Hint: It's the opposite of dog");
+            Console.WriteLine("Hey, can you guess the animal I saw? \nHint: It's the opposite of dog");
             string animalGuess = Console.ReadLine().ToLower();
 
             switch (animalGuess)

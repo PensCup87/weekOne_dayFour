@@ -54,7 +54,7 @@ namespace weekOne_dayFour
 
             string dudeName = "Bill";
             string nickName = "Pedro";
-            
+
             //if (dudeName == nickName)
             //{
             //    Console.WriteLine("The names are the same.");
@@ -65,18 +65,45 @@ namespace weekOne_dayFour
             //}
 
             if (dudeName.Equals(nickName))
-                {
+            {
                 Console.WriteLine("The names are the same");
             }
             else
             {
                 Console.WriteLine("The names are not equal");
             }
-            
+
+            //
+            //
+            //DOT CONCAT WITH SPACE BETWEEN NAMES
+            //IF THERE WAS A THIRD NAME FOLLOW FORMAT OF chessName
+            Console.WriteLine("Enter your first name: ");
+            string golfName = Console.ReadLine();
+            golfName = golfName.Trim();
+
+            Console.WriteLine("Enter your last name: ");
+            string chessName = Console.ReadLine();
+            chessName = " " + chessName.Trim();
+
+            string fullName = string.Concat(golfName, chessName);
+
+            //Console.WriteLine("Your name is " + golfName + " " + chessName);
+
+            Console.WriteLine("Your name is " + " " + fullName);
 
 
+            Console.WriteLine("Hey, can you guess the animal I saw? \n Hint: It's the opposite of dog");
+            string animalGuess = Console.ReadLine().ToLower();
 
-
+            switch (animalGuess)
+            {
+                case "cat":
+                    Console.WriteLine("You guessed correctly!");
+                    break;
+                default:
+                    Console.WriteLine("You guessed incorrectly...");
+                    break;
+            }
 
 
 
